@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projectile tracking</title>
+    <style>
+        canvas{background: lightblue; display: block; margin: 0 auto;}
+    </style>
+</head>
+
+<body>
+    <img src="biggergrid.png" id="cSystem" style="display:none">
+
+    Angle: <input type="text" id="angle"> (degree)
+    Velocity: <input type="text" id="velocity"> (m/s)
+    Starting Height: <input type="text" id="height"> (m)
+    Draw trajectory <input type="checkbox" id="trajectory"> 
+    <br>
+    Simulation speed: <input type=range id="speed" min="1" max="100"> (1-100)
+    <button onclick="setup()" id="simulate">Simulate</button>
+    <button onclick="reset()" id="reset">Reset</button>
+    <p id="xy"></p>
+    <p id="Vxy"></p>
+    <canvas id="newCanvas" height=800 width=1500></canvas>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

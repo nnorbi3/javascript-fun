@@ -1,0 +1,7 @@
+canvas{
+    background: papayawhip; display: block; margin: 0 auto;
+}
+body{
+    background-image: url("snake.png");
+    background-repeat: repeat;
+}
